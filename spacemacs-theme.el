@@ -239,10 +239,22 @@ to 'auto, tags may not be properly aligned. "
      `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
 
 ;;;;; avy
-     `(avy-lead-face   ((,class (:background ,green-bg :foreground ,green))))
-     `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,yellow))))
+     `(avy-lead-face   ((,class (:background ,green-bg :foreground ,magenta))))
+     `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,magenta))))
      `(avy-lead-face-1 ((,class (:background ,green-bg :foreground ,magenta))))
      `(avy-lead-face-2 ((,class (:background ,green-bg :foreground ,blue))))
+
+;;;;; awesome-tray
+     `(awesome-tray-red-face ((,class (:foreground ,base :inherit bold))))
+     `(awesome-tray-green-face ((,class (:foreground ,green :inherit bold))))
+     `(awesome-tray-green-path-face ((,class (:foreground ,green :inherit bold))))
+     `(awesome-tray-blue-face ((,class (:foreground ,blue :inherit bold))))
+     `(awesome-tray-blue-bright-face ((,class (:foreground ,blue :inherit bold))))
+     `(awesome-tray-orange-face ((,class (:foreground ,yellow :inherit bold))))
+     `(awesome-tray-yellow-face ((,class (:foreground ,yellow :inherit bold))))
+     `(awesome-tray-pink-face ((,class (:foreground ,magenta :inherit bold))))
+     `(awesome-tray-magenta-face ((,class (:foreground ,magenta :inherit bold))))
+     `(awesome-tray-cyan-face ((,class (:foreground ,cyan :inherit bold))))
 
 ;;;;; calfw
      `(cfw:face-title               ((,class (:foreground ,head1 :height 2.0 :weight bold :inherit variable-pitch))))
@@ -395,6 +407,11 @@ to 'auto, tags may not be properly aligned. "
      `(eshell-ls-symlink ((,class (:foreground ,cyan :inherit bold))))
      `(eshell-ls-unreadable ((,class (:foreground ,base))))
      `(eshell-prompt ((,class (:foreground ,keyword :inherit bold))))
+
+;;;;; eshell-git-prompt
+     `(eshell-git-prompt-powerline-dir-face ((,class (:background ,blue))))
+     `(eshell-git-prompt-powerline-clean-face ((,class (:background ,green))))
+     `(eshell-git-prompt-powerline-not-clean-face ((,class (:background ,red))))
 
 ;;;;; ESS
      `(ess-assignment-face ((,class (:foreground ,type :inherit bold))))
@@ -591,6 +608,17 @@ to 'auto, tags may not be properly aligned. "
      `(ido-subdir ((,class (:foreground ,keyword))))
      `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
 
+;;;;; imenu-list
+     `(imenu-list-entry-face ((,class (:foreground ,base))))
+     `(imenu-list-entry-face-0 ((,class (:foreground ,head1))))
+     `(imenu-list-entry-subalist-face-0 ((,class (:inherit bold :foreground ,head1))))
+     `(imenu-list-entry-face-1 ((,class (:foreground ,head2))))
+     `(imenu-list-entry-subalist-face-1 ((,class (:inherit bold :foreground ,head2))))
+     `(imenu-list-entry-face-2 ((,class (:foreground ,head3))))
+     `(imenu-list-entry-subalist-face-2 ((,class (:inherit bold :foreground ,head3))))
+     `(imenu-list-entry-face-3 ((,class (:foreground ,head3))))
+     `(imenu-list-entry-subalist-face-3 ((,class (:inherit bold :foreground ,head3))))
+
 ;;;;; info
      `(info-header-xref ((,class (:foreground ,func :underline t))))
      `(info-menu ((,class (:foreground ,suc))))
@@ -763,8 +791,8 @@ to 'auto, tags may not be properly aligned. "
      `(org-agenda-done ((,class (:foreground ,suc :height ,(if spacemacs-theme-org-agenda-height 1.2 1.0)))))
      `(org-agenda-structure ((,class (:inherit bold :foreground ,comp))))
      `(org-block ((,class (:background ,cblk-bg :foreground ,cblk :extend t))))
-     `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln :extend t))))
-     `(org-block-end-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln :extend t))))
+     `(org-block-begin-line ((,class (:background ,cblk-bg :foreground ,cblk :extend t))))
+     `(org-block-end-line ((,class (:background ,cblk-bg :foreground ,cblk :extend t))))
      `(org-clock-overlay ((,class (:foreground ,comp))))
      `(org-code ((,class (:foreground ,cyan))))
      `(org-column ((,class (:background ,highlight :inherit ,(if spacemacs-theme-org-height 'default)))))
